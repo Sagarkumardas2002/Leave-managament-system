@@ -1,0 +1,28 @@
+/* Status Badge Styling */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px; /* curved pill */
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 90px;
+  text-align: center;
+}
+
+.status-pending {
+  background-color: #f9f904;
+  color: oklch(0% 0 0 / 0.908);
+  border: 1px solid #f8c52b;
+}
+
+.status-approved {
+  background-color: #038321;
+  color: lch(100% 0.01 296.81);
+  border: 1px solid #c3e6cb;
+}
+
+.status-rejected {
+  background-color: hsl(0, 98%, 39%);
+  color: hwb(352 89% 8%);
+  border: 1px solid #f5c6cb;
+}
