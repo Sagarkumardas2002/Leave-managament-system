@@ -26,3 +26,12 @@
   color: hwb(352 89% 8%);
   border: 1px solid #f5c6cb;
 }
+
+
+@media (max-width: 576px) {
+  .table th,
+  .table td {
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+}
