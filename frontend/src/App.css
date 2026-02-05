@@ -1,4 +1,4 @@
-/* Status Badge Styling */
+Status Badge Styling
 .status-badge {
   padding: 6px 14px;
   border-radius: 20px; /* curved pill */
@@ -34,4 +34,98 @@
     font-size: 0.85rem;
     white-space: nowrap;
   }
+}
+
+
+this loading is not working 
+/* ============================= */
+/* Status Badge Styling */
+/* ============================= */
+.status-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 90px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #f8c52b;
+}
+
+.status-approved {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-rejected {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* ============================= */
+/* HORIZONTAL SKELETON LOADER */
+/* Left → Right shimmer */
+/* ============================= */
+.skeleton-loader {
+    height: 14px;
+    width: 100%;
+    border-radius: 4px;
+
+    /* Key part for horizontal movement */
+    background: linear-gradient(
+        90deg,
+        #e0e0e0 20%,
+        #f5f5f5 35%,
+        #e0e0e0 50%
+    );
+
+    background-size: 300% 100%;
+    animation: shimmer-horizontal 1.2s linear infinite;
+}
+
+/* Horizontal wave animation */
+@keyframes shimmer-horizontal {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* ============================= */
+/* Table Improvements */
+/* ============================= */
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* ============================= */
+/* Responsive Tweaks */
+/* ============================= */
+@media (max-width: 768px) {
+    .status-badge {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+        min-width: auto;
+    }
+
+    .table th,
+    .table td {
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
 }
